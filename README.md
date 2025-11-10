@@ -33,13 +33,13 @@ r_vals, Ne_vals, success = solar_electron_density(model="custom")
 
 Function: solar_electron_density()
 
--Reads the standard BP2000 solar model data from a file for each point.
+- Reads the standard BP2000 solar model data from a file for each point.
 
--Converts the read data into electron density values.
+- Converts the read data into electron density values.
 
--Uses Avogadro's number (N_A) for unit conversion.
+- Uses Avogadro's number (N_A) for unit conversion.
 
--The electron density unit here is cm⁻³.
+- The electron density unit here is cm⁻³.
 
 ```python
 # Example usage
