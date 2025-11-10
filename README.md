@@ -42,6 +42,7 @@ r_vals, Ne_vals, success = solar_electron_density(filename="BP2000_electron_dens
 
 ## Reading Electron Density (Mode 2: BP2000)
 
+
 # Example usage
 r_vals, Ne_vals, success = solar_electron_density(filename="BP2000_electron_density.txt", model="BP2000")
 
