@@ -25,7 +25,8 @@ Function: custom_density_function()
 
 ```python
 # Example usage
-r_vals, Ne_vals, success = solar_electron_density(model="custom")```
+r_vals, Ne_vals, success = solar_electron_density(model="custom")
+
 
 Function: custom_density_function()
 
@@ -37,6 +38,7 @@ Uses Avogadro's number (N_A) for unit conversion.
 
 The electron density unit here is cm⁻³.
 
+```
 
 ## Reading Electron Density (Mode 2: BP2000)
 
@@ -47,7 +49,9 @@ r_vals, Ne_vals, success = solar_electron_density(filename="BP2000_electron_dens
 
 Function: solar_electron_density()
 
-It will use the electron density from BP2000.txt. ```
+It will use the electron density from BP2000.txt. 
+```
+
 
 
 
