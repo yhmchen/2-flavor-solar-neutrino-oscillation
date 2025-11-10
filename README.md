@@ -8,7 +8,7 @@ Main Features:
 - Calculate flavor probabilities P(ν_e) and P(ν_μ) at user-specified distances.
 - Plot the survival and transition probabilities versus distance.
 
-- Usage:
+Usage:
 - Adjust the neutrino energy (E_nu) and evaluation points (r_eval) as needed.
 - Ensure the BP2000 electron density model file is available.
 - Run the script to obtain probability curves and visualize the results.
