@@ -91,11 +91,13 @@ V_e =
 \end{bmatrix}
 $$
 
-with
+with 
 
 $$
 \Delta m_{21}^2 = m_2^2 - m_1^2
 $$
+
+ where $$\Delta m_{21}^2 $$ represents mass square difference
 
 ## Schrödinger Equation
 
