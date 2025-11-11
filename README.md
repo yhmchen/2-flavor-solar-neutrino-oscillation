@@ -12,7 +12,10 @@ Usage:
 - Adjust the neutrino energy (E_nu) and evaluation points (r_eval) as needed.
 - Ensure the BP2000 electron density model file is available.
 - Run the script to obtain probability curves and visualize the results.
-"""
+
+> ⚠️ Note: This repository is for **learning and educational purposes**. 
+> The code, derivations, and plots are part of personal study of solar neutrino oscillations.
+
 
 ## Solar Electron Density
 
