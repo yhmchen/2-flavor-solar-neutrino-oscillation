@@ -50,6 +50,51 @@ r_vals, Ne_vals, success = solar_electron_density(filename="BP2000_electron_dens
 ```
 
 
+## PMNS Matrix and Hamiltonian
+
+The PMNS rotation matrix:
+
+$$
+U = 
+\begin{bmatrix}
+\cos \theta & \sin \theta \\
+-\sin \theta & \cos \theta
+\end{bmatrix}
+$$
+
+The total Hamiltonian is:
+
+$$
+H_\text{total} = U \cdot H_\text{vac} \cdot U^\dagger + V_e
+$$
+
+where the vacuum Hamiltonian is:
+
+$$
+H_\text{vac} =
+\begin{bmatrix}
+0 & 0 \\
+0 & \frac{\Delta m_{21}^2}{2E}
+\end{bmatrix}
+$$
+
+and the electron potential is:
+
+$$
+V_e =
+\begin{bmatrix}
+\sqrt{2} G_F N_e & 0 \\
+0 & 0
+\end{bmatrix}
+$$
+
+with
+
+$$
+\Delta m_{21}^2 = m_2^2 - m_1^2
+$$
+
+
 
 
 
