@@ -14,9 +14,9 @@ Usage:
 - Run the script to obtain probability curves and visualize the results.
 """
 
-# Solar Electron Density
+## Solar Electron Density
 
-## Reading Electron Density (Mode 1: Custom Model)
+### Reading Electron Density (Mode 1: Custom Model)
 
 Function: custom_density_function()
 
@@ -29,7 +29,7 @@ r_vals, Ne_vals, success = solar_electron_density(model="custom")
 
 ```
 
-## Reading Electron Density (Mode 2: BP2000) 
+### Reading Electron Density (Mode 2: BP2000) 
 
 Function: solar_electron_density()
 
