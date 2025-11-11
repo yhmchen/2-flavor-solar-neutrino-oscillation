@@ -119,7 +119,7 @@ $$
 \frac{\partial \psi}{\partial x} = -i H \psi
 $$
 
-- The left-hand side is calculated with respect to $d/dx$ in units of $1/R_\odot$ (units: $1/(R_\odot\ \mathrm{m})$), while the right-hand side has units of $\mathrm{eV}$.
+- The left-hand side is calculated with respect to $d/dx$ in units of $1/R_\odot$ (units: 1/( $R_\odot (\mathrm{m})$ ), m is meter), , while the right-hand side has units of $\mathrm{eV}$.
 - Therefore, we need to multiply the right-hand side by a **conversion factor** to make the units consistent:
 
 $$
