@@ -112,6 +112,28 @@ where:
 - $H_\text{total}(r)$ is the total Hamiltonian at radius $r$, including both vacuum and matter effects.
 - $R_\odot$ is the solar radius, used to convert the dimensionless distance in the file to physical units.
 
+
+The Schrödinger equation can be written as:
+
+$$
+\frac{\partial \psi}{\partial x} = -i H \psi
+$$
+
+- The left-hand side is calculated with respect to $d/dx$ in units of $1/R_\odot$ (units: $1/(R_\odot\ \mathrm{m})$), while the right-hand side has units of $\mathrm{eV}$.
+- Therefore, we need to multiply the right-hand side by a **conversion factor (cf)** to make the units consistent:
+
+$$
+\mathrm{conversion\ factor}= R_\odot \cdot \mathrm{factor\ (eV^{-1})}
+$$
+
+- Units after conversion:
+
+$$
+\frac{d \psi}{dx} \ (\mathrm{1/m}) \equiv 
+\frac{d \psi}{dx} \cdot \frac{1}{\mathrm{conversion\ factor}} \ (\mathrm{eV}) = -i H \psi
+$$
+
+
   The calculation about conversion factor : (see [Schrödinger Equation Unit Conversion Factor Explanation](#schrödinger-equation-unit-conversion-factor-explanation) for more details in appendix)
 
 
