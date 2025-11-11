@@ -127,7 +127,7 @@ $$
 ### 2) Solving the Schrödinger Equation
 
 - Use `solve_ivp` to solve the differential equation for neutrino wavefunction evolution from $r = 0$ to $r_\text{max}$.  
-- You can specify the positions where you want to evaluate the wavefunction using `$r_\text{eval}$`.  
+- You can specify the positions where you want to evaluate the wavefunction using $r_\text{eval}$.  
 
 Example:
 
@@ -149,7 +149,7 @@ sol = solve_ivp(lambda r, psi: schrodinger(r, psi, H_total),
                 t_eval=r_eval)
 ```
 
-## Plotting the Results
+## Plotting
 
 - The total distance for the wavefunction evolution is determined by `r_eval`.  
   - For example, if `r_eval = np.linspace(0, 1, 100)`, the wavefunction will be evaluated from 0 to 1 (in units of solar radius).
@@ -177,6 +177,33 @@ TEST_MODE = False  # or True
         r_vals_out, psi_vals = solve_neutrino_evolution(E_nu, r_eval, r_vals, Ne_vals, r_max=r_eval[-1])
         prob_e_list, prob_mu_list = compute_probabilities(r_vals_out, psi_vals)
 ```
+
+## Plotting the Results
+
+# Appendix
+## All function
+- def custom_density_function(r):
+- def solar_electron_density(filename=None, model="BP2000", debug=False):
+- def electron_potential(r, r_vals, Ne_vals):
+- def get_pmns_matrix_2flavor():
+- def hamiltonian_2flavor(r, E_nu, r_vals, Ne_vals):
+- def schrodinger_rhs(r, psi_flat, E_nu, r_vals, Ne_vals):
+- def solve_neutrino_evolution(E_nu, r_eval,r_vals, Ne_vals, r_max):
+- def compute_probabilities(r_vals, psi_vals):
+- def plot_probabilities(r_vals_out, prob_e_list, prob_mu_list):
+
+## Parameters explanation
+
+
+- r_vals: Distance points from the BP2000 electron density model
+- Ne_vals: Electron density values corresponding to r_vals
+- r: Current neutrino position
+- E_nu: Neutrino energy
+- r_eval: Distance points at which solve_ivp outputs the solution
+- r_max: Total integration distance
+- r_vals_out: Output distance points from solve_neutrino_evolution
+- psi_vals: Output wavefunctions from solve_neutrino_evolution
+
 
 
 
