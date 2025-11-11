@@ -96,8 +96,8 @@ $$
 
 ## Schrödinger Equation
 
-When reading the electron density file, the distances are given in units of the solar radius \(R_\odot\).  
-To obtain the correct wavefunction, we must include a factor of \(R_\odot\) on the right-hand side of the Schrödinger equation:
+When reading the electron density file, the distances are given in units of the solar radius $\(R_\odot\)$.  
+To obtain the correct wavefunction, we must include a factor of $\(R_\odot\)$ on the right-hand side of the Schrödinger equation:
 
 $$
 i \frac{d}{dt} \Psi(r) = R_\odot \, H_\text{total}(r) \, \Psi(r)
@@ -160,14 +160,22 @@ sol = solve_ivp(lambda r, psi: schrodinger(r, psi, H_total),
 - After solving the Schrödinger equation with `solve_ivp`, you can plot the probability for each flavor:
 
 ```python
-import matplotlib.pyplot as plt
+if success:
+TEST_MODE = False  # or True
 
-plt.plot(r_eval, np.abs(sol.y[0])**2, label=r'$P(\nu_e)$')
-plt.plot(r_eval, np.abs(sol.y[1])**2, label=r'$P(\nu_\mu)$')
-plt.xlabel("r (in units of $R_\odot$)")
-plt.ylabel("Probability")
-plt.legend()
-plt.show()
+    # Use custom electron density model
+    # r_vals, Ne_vals, success = solar_electron_density(model="custom", debug=False)
+    # Use BP2000 model
+    r_vals, Ne_vals, success = solar_electron_density(filename)
+        E_nu = 10e6  # 10 MeV
+
+        if TEST_MODE:
+            r_eval = np.array([0.0, 0.1, 0.5, 1.0, 2.0])  # Test with fewer points
+        else:
+            r_eval = np.linspace(0.0, 2.0, 1000)         # Full simulation with many points
+
+        r_vals_out, psi_vals = solve_neutrino_evolution(E_nu, r_eval, r_vals, Ne_vals, r_max=r_eval[-1])
+        prob_e_list, prob_mu_list = compute_probabilities(r_vals_out, psi_vals)
 ```
 
 
