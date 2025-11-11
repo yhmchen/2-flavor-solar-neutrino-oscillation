@@ -29,9 +29,11 @@ r_vals, Ne_vals, success = solar_electron_density(model="custom")
 
 ```
 
-## Reading Electron Density (Mode 2: BP2000)
+## Reading Electron Density (Mode 2: BP2000) 
 
 Function: solar_electron_density()
+
+- Density profile from John Bahcall's website (https://www.sns.ias.edu/~jnb/SNdata/sndata.html)
 
 - Reads the standard BP2000 solar model data from a file for each point.
 
