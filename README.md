@@ -180,6 +180,11 @@ TEST_MODE = False  # or True
 
 ## Plotting the Results
 
+
+![Neutrino Oscillation Result]("2 flavor solar E=1MeV 2R_sun.png")
+
+
+
 # Appendix
 ## All function
 - def custom_density_function(r):
