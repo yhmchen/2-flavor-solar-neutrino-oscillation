@@ -16,7 +16,8 @@ Usage:
 
 ## Solar Electron Density
 
-We use unit factor (See [Unit Factor]((#unit-factor-notes)) for more details.) in order to convert eV to m⁻¹
+We use the unit factor in order to convert eV to m⁻¹.  (see [Unit Factor](#unit-factor-notes) for more details in appendix)
+
 
 ### Reading Electron Density (Mode 1: Custom Model)
 
@@ -110,6 +111,8 @@ where:
 - $\Psi(r)$ is the neutrino wavefunction.
 - $H_\text{total}(r)$ is the total Hamiltonian at radius $r$, including both vacuum and matter effects.
 - $R_\odot$ is the solar radius, used to convert the dimensionless distance in the file to physical units.
+
+  The calculation about conversion factor :  (see [Schrödinger Equation Unit Conversion Factor Explanation](#schrödinger_equation_unit_conversion_factor_explanation) for more details in appendix)
 
 
 ## Wavefunction Evolution and Probability Calculation
@@ -296,7 +299,7 @@ $$
 - ⇒ 1 eV = 1 / (197.327 × 10⁶ fm)
 - ⇒ 10¹⁵ / (197.327 × 10⁶) m⁻¹ = 5.06773 × 10⁶ m⁻¹
 
-## Schrödinger Equation Unit Conversion Explanation
+## Schrödinger Equation Unit Conversion Factor Explanation
 
 **Factor:** 1 eV = 5.06773e+06 m⁻¹
 
