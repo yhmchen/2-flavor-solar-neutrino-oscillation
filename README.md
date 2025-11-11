@@ -181,7 +181,7 @@ TEST_MODE = False  # or True
 ## Plotting the Results
 
 
-![Neutrino Oscillation Result]("2 flavor solar E=1MeV 2R_sun.png")
+![Neutrino Oscillation Result](2_flavor_solar_E_1MeV_2R_sun.png)
 
 
 
