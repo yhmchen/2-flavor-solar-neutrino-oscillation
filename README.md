@@ -110,7 +110,7 @@ where:
 
 - $\Psi(r)$ is the neutrino wavefunction.
 - $H_\text{total}(r)$ is the total Hamiltonian at radius $r$, including both vacuum and matter effects.
-- $R_\odot$ is the solar radius, used to convert the dimensionless distance in the file to physical units.
+- $R_\odot$ (In Meters) is the solar radius, used to convert the dimensionless distance in the file to physical units.
 
 
 The Schrödinger equation can be written as:
@@ -119,7 +119,7 @@ $$
 \frac{\partial \psi}{\partial x} = -i H \psi
 $$
 
-- The left-hand side is calculated with respect to $d/dx$ in units of $1/R_\odot$ (units: 1/( $R_\odot (\mathrm{m})$ ), m is meter), , while the right-hand side has units of $\mathrm{eV}$.
+- The left-hand side is calculated with respect to $d/dx$ in units of $1/R_\odot$, , while the right-hand side has units of $\mathrm{eV}$.
 - Therefore, we need to multiply the right-hand side by a **conversion factor** to make the units consistent:
 
 $$
