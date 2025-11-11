@@ -112,7 +112,7 @@ where:
 - $H_\text{total}(r)$ is the total Hamiltonian at radius $r$, including both vacuum and matter effects.
 - $R_\odot$ is the solar radius, used to convert the dimensionless distance in the file to physical units.
 
-  The calculation about conversion factor :  (see [Schrödinger Equation Unit Conversion Factor Explanation](#schrödinger_equation_unit_conversion_factor_explanation) for more details in appendix)
+  The calculation about conversion factor : (see [Schrödinger Equation Unit Conversion Factor Explanation](#schrödinger-equation-unit-conversion-factor-explanation) for more details in appendix)
 
 
 ## Wavefunction Evolution and Probability Calculation
