@@ -94,7 +94,81 @@ $$
 \Delta m_{21}^2 = m_2^2 - m_1^2
 $$
 
+## Schrödinger Equation
 
+When reading the electron density file, the distances are given in units of the solar radius \(R_\odot\).  
+To obtain the correct wavefunction, we must include a factor of \(R_\odot\) on the right-hand side of the Schrödinger equation:
+
+$$
+i \frac{d}{dt} \Psi(r) = R_\odot \, H_\text{total}(r) \, \Psi(r)
+$$
+
+where:
+
+- $\Psi(r)$ is the neutrino wavefunction.
+- $H_\text{total}(r)$ is the total Hamiltonian at radius $r$, including both vacuum and matter effects.
+- $R_\odot$ is the solar radius, used to convert the dimensionless distance in the file to physical units.
+
+
+## Wavefunction Evolution and Probability Calculation
+
+### 1) Initial Condition
+
+- Assume that at the center of the Sun, only electron neutrinos are present.
+- Set the initial wavefunction as:
+
+$$
+\Psi(r=0) = 
+\begin{bmatrix}
+1 \\ 0
+\end{bmatrix}
+$$
+
+### 2) Solving the Schrödinger Equation
+
+- Use `solve_ivp` to solve the differential equation for neutrino wavefunction evolution from $r = 0$ to $r_\text{max}$.  
+- You can specify the positions where you want to evaluate the wavefunction using `$r_\text{eval}$`.  
+
+Example:
+
+- Solve up to $r_\text{max} = 2$  
+- Evaluate and output results only up to $r_\text{eval} = 1 $
+  
+
+```python
+from scipy.integrate import solve_ivp
+
+# Example 
+def schrodinger(r, psi, H_total):
+    return -1j * H_total(r) @ psi
+
+r_eval = np.linspace(0, 1, 100)  # positions to evaluate
+sol = solve_ivp(lambda r, psi: schrodinger(r, psi, H_total), 
+                t_span=(0, 2), 
+                y0=initial_psi, 
+                t_eval=r_eval)
+```
+
+## Plotting the Results
+
+- The total distance for the wavefunction evolution is determined by `r_eval`.  
+  - For example, if `r_eval = np.linspace(0, 1, 100)`, the wavefunction will be evaluated from 0 to 1 (in units of solar radius).
+
+- The neutrino energy is determined by `E_nu` in the Hamiltonian.  
+  - Changing `E_nu` affects the oscillation behavior of the neutrino wavefunction.
+
+- After solving the Schrödinger equation with `solve_ivp`, you can plot the probability for each flavor:
+
+```python
+import matplotlib.pyplot as plt
+
+plt.plot(r_eval, np.abs(sol.y[0])**2, label=r'$P(\nu_e)$')
+plt.plot(r_eval, np.abs(sol.y[1])**2, label=r'$P(\nu_\mu)$')
+plt.xlabel("r (in units of $R_\odot$)")
+plt.ylabel("Probability")
+plt.legend()
+plt.show()
+```
 
 
 
