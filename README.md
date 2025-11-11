@@ -180,10 +180,23 @@ TEST_MODE = False  # or True
 
 ## Plotting the Results
 
-
+### E=1MeV, BP2000
 ![Neutrino Oscillation Result](2_flavor_solar_E_1MeV_2R_sun.png)
 
+### E=5MeV, BP2000
+![Neutrino Oscillation Result](2_flavor_solar_E_5MeV_2R_sun.png)
 
+### E=10MeV, BP2000
+![Neutrino Oscillation Result](2_flavor_solar_E_10MeV_2R_sun.png)
+
+### E=100MeV, BP2000
+![Neutrino Oscillation Result](2_flavor_solar_E_100MeV_2R_sun.png)
+
+### E=1000MeV, BP2000
+![Neutrino Oscillation Result](2_flavor_solar_E_1000MeV_2R_sun.png)
+
+### E=1MeV, Custom
+![Neutrino Oscillation Result](2_flavor_(custom)_solar_E_1MeV_2R_sun.png)
 
 # Appendix
 ## All function
