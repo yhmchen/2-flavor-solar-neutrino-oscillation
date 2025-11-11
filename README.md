@@ -183,20 +183,112 @@ TEST_MODE = False  # or True
 ### E=1MeV, BP2000
 ![Neutrino Oscillation Result](2_flavor_solar_E_1MeV_2R_sun.png)
 
+From the MSW resonance electron density, we obtain:
+
+$$
+n_e = \frac{\cos 2\theta \,\Delta m^2}{2\sqrt{2}\,E\,G_F}
+= 9.25\times 10^{11}
+$$
+
+$$
+\log\!\left(\frac{N_e}{N_A}\right) = 2.60
+$$
+
+By comparing with the BP2000 solar electron density profile,  
+the resonance point occurs **before the solar center**,  
+so there is **no MSW effect**, and the neutrino mainly undergoes **vacuum oscillation**.
+
 ### E=5MeV, BP2000
 ![Neutrino Oscillation Result](2_flavor_solar_E_5MeV_2R_sun.png)
+
+From the MSW resonance electron density, we obtain:
+
+$$
+n_e = \frac{\cos 2\theta \,\Delta m^2}{2\sqrt{2}\,E\,G_F}
+= 1.85\times 10^{11}
+$$
+
+$$
+\log\!\left(\frac{N_e}{N_A}\right) = 1.6
+$$
+
+From the BP2000 solar model data,  
+the resonance point occurs approximately at  
+$$
+r \approx 0.167\,R_\odot
+$$
+
 
 ### E=10MeV, BP2000
 ![Neutrino Oscillation Result](2_flavor_solar_E_10MeV_2R_sun.png)
 
+From the MSW resonance electron density, we obtain:
+
+$$
+n_e = \frac{\cos 2\theta \,\Delta m^2}{2\sqrt{2}\,E\,G_F}
+= 9.25\times 10^{10}
+$$
+
+$$
+\log\!\left(\frac{N_e}{N_A}\right) = 1.3
+$$
+
+From the BP2000 electron density profile,  
+the resonance point occurs approximately at  
+$$
+r \approx 0.23\,R_\odot
+$$
+
+
 ### E=100MeV, BP2000
 ![Neutrino Oscillation Result](2_flavor_solar_E_100MeV_2R_sun.png)
+
+From the MSW resonance electron density, we obtain:
+
+$$
+n_e = \frac{\cos 2\theta \,\Delta m^2}{2\sqrt{2}\,E\,G_F}
+= 9.25\times 10^{9}
+$$
+
+$$
+\log\!\left(\frac{N_e}{N_A}\right) = 0.3
+$$
+
+By comparing with the BP2000 solar electron density profile,  
+the resonance point occurs approximately at  
+$$
+r \approx 0.44\,R_\odot
+$$
 
 ### E=1000MeV, BP2000
 ![Neutrino Oscillation Result](2_flavor_solar_E_1000MeV_2R_sun.png)
 
+From the MSW resonance electron density, we obtain:
+
+$$
+n_e = \frac{\cos 2\theta \,\Delta m^2}{2\sqrt{2}\,E\,G_F}
+= 9.25\times 10^{8}
+$$
+
+$$
+\log\!\left(\frac{N_e}{N_A}\right) = -0.697
+$$
+
+By comparing with the BP2000 electron density profile,  
+the resonance point occurs approximately at  
+$$
+r \approx 0.68\,R_\odot
+$$
+
+
 ### E=1MeV, Custom
 ![Neutrino Oscillation Result](2_flavor_(custom)_solar_E_1MeV_2R_sun.png)
+
+The adopted electron density model is:
+
+$$
+N(r) = 10^{(28.0 - 4.3\,r)}
+$$
 
 # Appendix
 ## All function
