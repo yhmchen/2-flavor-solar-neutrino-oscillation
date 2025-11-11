@@ -16,6 +16,8 @@ Usage:
 
 ## Solar Electron Density
 
+We use unit factor (See [Unit Factor]((#unit-factor-notes)) for more details.) in order to convert eV to m⁻¹
+
 ### Reading Electron Density (Mode 1: Custom Model)
 
 Function: custom_density_function()
@@ -285,7 +287,7 @@ $$
 
 # Appendix
 
-## Unit Conversion Notes
+## Unit Factor Notes
 
 - ℏ * c = 3.16153 × 10⁻²⁶ J·m
 - ℏ * c = 197.327 MeV·fm
@@ -304,6 +306,15 @@ the RHS of the Schrödinger equation needs to be multiplied by:
 
 ```text
 dψ/dx (1/m) = -i * H * ψ (1/(sun distance)) * sun distance
+```
+This ensures that the resulting probability is correct in physical units, 
+because actual probability is measured in meters (not in units of solar radius).
+
+Next, to make the units consistent on both sides, multiply the RHS by the "factor":
+```
+⇒ dψ/dx (1/m) = -i * H(eV) * ψ * factor (1 eV = 5.06773e+06 m⁻¹)
+```
+This is the origin of the conversion_factor.
 
 ## All function
 - def custom_density_function(r):
