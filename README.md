@@ -284,6 +284,27 @@ $$
 ![Neutrino Oscillation Result](2_flavor_(custom)_solar_E_1MeV_2R_sun.png)
 
 # Appendix
+
+## Unit Conversion Notes
+
+- ℏ * c = 3.16153 × 10⁻²⁶ J·m
+- ℏ * c = 197.327 MeV·fm
+- 1 = 197.327 MeV·fm ⇒ 1/fm = 197.327 MeV
+- 1/fm = 197.327 MeV
+- ⇒ 1 eV = 1 / (197.327 × 10⁶ fm)
+- ⇒ 10¹⁵ / (197.327 × 10⁶) m⁻¹ = 5.06773 × 10⁶ m⁻¹
+
+## Schrödinger Equation Unit Conversion Explanation
+
+**Factor:** 1 eV = 5.06773e+06 m⁻¹
+
+Because the Hamiltonian implicitly uses solar distance units  
+(the electron density file has distances in units of solar radius),  
+the RHS of the Schrödinger equation needs to be multiplied by:
+
+```text
+dψ/dx (1/m) = -i * H * ψ (1/(sun distance)) * sun distance
+
 ## All function
 - def custom_density_function(r):
 - def solar_electron_density(filename=None, model="BP2000", debug=False):
