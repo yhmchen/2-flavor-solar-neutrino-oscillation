@@ -120,7 +120,7 @@ $$
 $$
 
 - The left-hand side is calculated with respect to $d/dx$ in units of $1/R_\odot$ (units: $1/(R_\odot\ \mathrm{m})$), while the right-hand side has units of $\mathrm{eV}$.
-- Therefore, we need to multiply the right-hand side by a **conversion factor (cf)** to make the units consistent:
+- Therefore, we need to multiply the right-hand side by a **conversion factor** to make the units consistent:
 
 $$
 \mathrm{conversion\ factor}= R_\odot \cdot \mathrm{factor\ (eV^{-1})}
