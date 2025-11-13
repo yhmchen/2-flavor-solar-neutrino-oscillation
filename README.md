@@ -50,6 +50,8 @@ Function: solar_electron_density()
 
 - The electron density unit here is cm⁻³.
 
+- The unit of the distance is $\(R_\odot\)$.
+
 ```python
 # Example usage
 r_vals, Ne_vals, success = solar_electron_density(filename="BP2000_electron_density.txt", model="BP2000")
