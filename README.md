@@ -186,9 +186,14 @@ sol = solve_ivp(lambda r, psi: schrodinger(r, psi, H_total),
 - Evaluate and output results only up to $r_\text{eval} = 1 $
 
 ```python
-  r_eval = np.linspace(0.0, 2.0, 7)  # Sample points from 0 to 2 R_sun
+  r_eval = np.linspace(0.0, 1.0, 7)  # Sample points from 0 to 1 R_sun
 ```
 
+- Of course we can evaluate and output results only up to $r_\text{eval} = 2 $ , which is same as $r_\text{max} = 2$.
+
+```python
+  r_eval = np.linspace(0.0, 2.0, 7)  # Sample points from 0 to 2 R_sun
+```
 
 
 ## Plotting
