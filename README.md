@@ -1,4 +1,5 @@
 # 2-flavor-solar-neutrino-oscillation
+This is a study note on solar neutrinos. It introduces the basic theories used in solar neutrinos and also simulates their survival probability.
 This Python code calculates and visualizes the flavor evolution of solar neutrinos  as they travel from the Sun to Earth.  It uses a 2-flavor neutrino model with vacuum and matter effects, based on the BP2000  solar electron density model.
 (This code was assisted by **ChatGPT**.)
 
