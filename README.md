@@ -382,8 +382,6 @@ This is the origin of the conversion_factor.
 - [Neutrino XYZ](https://docs.neutrino.xyz/)  
 - J. N. Bahcall, *Neutrino Physics and Astrophysics* (see John Bahcall’s work on solar models)
 
-**Attribution:**  
-If you use this code or any part of this project, please cite or acknowledge the original source 
 
 
 
