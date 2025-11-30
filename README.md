@@ -386,8 +386,14 @@ This is the origin of the conversion_factor.
 
 # Reference
 
-- [Neutrino XYZ](https://docs.neutrino.xyz/)  
-- J. N. Bahcall, *Neutrino Physics and Astrophysics* (see John Bahcall’s work on solar models)
+### Books
+- Bahcall, J. N. (1989). *Neutrino Physics and Astrophysics*.
+- Thomson, M. (2013). *Modern Particle Physics*.
+- Nagashima, Y. (2015). *Beyond the Standard Model of Elementary Particle Physics*.
+
+### Websites
+- [Neutrino XYZ](https://docs.neutrino.xyz/) — online resource for neutrino studies
+- [John Bahcall's SN density profiles](https://www.sns.ias.edu/~jnb/SNdata/sndata.html)
 
 
 
