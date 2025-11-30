@@ -393,7 +393,7 @@ This is the origin of the conversion_factor.
 
 ### Websites
 - [Neutrino XYZ](https://docs.neutrino.xyz/) — online resource for neutrino studies
-- [John Bahcall's SN density profiles](https://www.sns.ias.edu/~jnb/SNdata/sndata.html)
+- [John Bahcall's solar neutrino density profiles](https://www.sns.ias.edu/~jnb/SNdata/sndata.html)
 
 
 
