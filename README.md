@@ -14,8 +14,8 @@ Usage:
 - Ensure the BP2000 electron density model file is available.
 - Run the script to obtain probability curves and visualize the results.
 
-> ⚠️ Note:  This repository is intended for research preparation and self-study.
-> The code, derivations, and plots summarize key concepts in solar neutrino oscillations and support independent exploration of neutrino flavor evolution.
+> ⚠️ Note: This repository serves as a research preparation and technical resource.
+> The code, derivations, and plots summarize key concepts in solar neutrino oscillations and are intended to support independent exploration and study by others.
 
 
 
