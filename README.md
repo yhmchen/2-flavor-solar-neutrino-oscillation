@@ -1,7 +1,7 @@
 # 2-flavor-solar-neutrino-oscillation
 This note serves as a research preparation note, summarizing key concepts in solar neutrino oscillations and demonstrating a Python simulation of their survival probabilities.
 This Python code calculates and visualizes the survival probability of solar neutrinos  as they travel from the Sun to Earth.  It uses a 2-flavor neutrino model with vacuum and matter effects, based on the BP2000  solar electron density model.
-(This code was assisted by **ChatGPT**.)
+(Note on Technical Assistance: To enhance code clarity and aid in formatting/syntax, generative AI tools were utilized. The assistance was strictly limited to code syntax, formatting, and adding some comments. )
 
 Main Features:
 - Compute the neutrino Hamiltonian including vacuum oscillations and matter potential.
